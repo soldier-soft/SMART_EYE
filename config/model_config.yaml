@@ -1,0 +1,22 @@
+# Model Paths and Parameters 
+object_detection:
+  model: "yolov3"
+  input_size: 416
+  confidence_threshold: 0.5
+  nms_threshold: 0.4
+
+face_recognition:
+  model: "hog"  # or "cnn" for better accuracy but slower
+  tolerance: 0.6
+  num_jitters: 1
+
+currency_recognition:
+  input_size: 224
+  preprocessing:
+    rescale: 1./255
+    rotation_range: 20
+    width_shift_range: 0.2
+    height_shift_range: 0.2
+    shear_range: 0.2
+    zoom_range: 0.2
+    horizontal_flip: True
